@@ -34,8 +34,40 @@ attach_file
     </div>
     {/*----------chat body---------- */}
     <div className='chatBody'>
-      <p></p>
+      <p className='chatMessage'>
+        <span className='chatName'>Rahul</span>
+        Hello guys
+        <span className='timestamp'>11:11</span>
+      </p>
+      <p className='chatMessage'>
+        <span className='chatName'>Rahul</span>
+        Hello guys
+        <span className='timestamp'>11:11</span>
+      </p>
+      <p className='chatMessage chatReceiver'>
+        <span className='chatName'>Rakesh</span>
+        Hello Guys
+        <span className='timestamp'>12:01</span>
+      </p>
+      
     </div>
+    {/* ------------chat footer------------- */}
+    <div className='chatFooter'>
+    <span class="material-symbols-outlined">
+mood
+</span>
+      <form>
+        <input type="text" placeholder="Type a message"/>
+        <button type="submit" style={{border:'none'}} ><span class="material-symbols-outlined">
+send
+</span> </button>
+      <button style={{border:'none'}}><span class="material-symbols-outlined">
+mic
+</span></button>
+
+      </form>
+    </div>
+
     </div>
   )
 }
